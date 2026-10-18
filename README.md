@@ -39,13 +39,13 @@ Para manter o repositório organizado e com uma curva de aprendizado lógica, os
 
 ---
 
-## 💻 Trilha de Desenvolvimento em C
+## 💻 Trilha de Desenvolvimento em C(/Linguagem_C/Fase_1-Fundamentos)
 
 Abaixo está o log de desenvolvimento da linguagem C. Você pode clicar nos links para ir direto aos códigos e resumos de cada módulo.
 
 ### 📚 Fase 1: Fundamentos e Controle de Memória
 
-#### [Módulo 1: O Aquecimento (Sintaxe e Lógica)](/link-para-a-pasta-do-modulo-1)
+#### [Módulo 1: O Aquecimento (Sintaxe e Lógica)](/Linguagem_C/Fase_1-Fundamentos/Module-Um)
 *Status: Concluído* ✔️
 
 Este módulo serviu para consolidar a sintaxe base do C, garantindo que o controle de fluxo e as operações primitivas estejam otimizadas antes de avançarmos para o gerenciamento manual de memória.
@@ -57,12 +57,12 @@ Este módulo serviu para consolidar a sintaxe base do C, garantindo que o contro
 - Isolamento de escopo na *Stack* através de funções modulares e passagem de parâmetros por valor.
 
 **Provas do Módulo:**
-- [📝 Prova Teórica: Regras do Compilador e Layout de Memória](/link-para-prova-teorica)
-- [🛠️ Desafio Prático: Calculadora Modular CLI com Otimização de Bits](/link-para-calculadora)
+- [📝 Prova Teórica: Regras do Compilador e Layout de Memória](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Avaliacoes/README.md)
+- [🛠️ Desafio Prático: Calculadora Modular CLI com Otimização de Bits](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Avaliacoes/Calculadora_Modular_CLI.c)
 
 ---
 
-#### [Módulo 2: O Coração do C (Estruturação)](/link-para-a-pasta-do-modulo-2)
+#### [Módulo 2: O Coração do C (Estruturação)](/Linguagem_C/Fase_1-Fundamentos/Module-Dois)
 *Status: Em Andamento* 🔄
 
 **O que estou estudando no momento:**
