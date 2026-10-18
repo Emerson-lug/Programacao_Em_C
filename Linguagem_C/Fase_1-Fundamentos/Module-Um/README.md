@@ -26,4 +26,4 @@ Teste rigoroso de 10 questões abordando regras do compilador, limites de memór
 ### 💻 2. Prova Prática: Calculadora Modular CLI
 Construção de um sistema de terminal modular que encapsula toda a sintaxe básica, prevenção de crash de memória (divisão por zero) e otimização bit a bit do Módulo 1 em um único executável.
 *   **Nota Final:** 8.5 / 10.0
-*   **Acesso:** [Ver Código Fonte da Calculadora](./Avaliacoes/Pratico/README.md)
+*   **Acesso:** [Ver Prova Prática](./Avaliacoes/Pratico/README.md)

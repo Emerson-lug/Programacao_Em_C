@@ -26,29 +26,25 @@ Em C, o controle de performance e memória começa no momento em que faz a escol
 
 1. **O Mapa da Memória**
 Escreva um programa usando a função `sizeof()` para imprimir no terminal a quantidade exata de bytes ocupada por um `char`, um `int`, um `float`, um `double` e um `unsigned long int` no seu compilador atual.
-
-[Código do Exercício 1](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-Primitive%20Types/Memory.c)
+    - [Código do Exercício 1](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-Primitive%20Types/Memory.c)
 
 2. **O Limite do Atributo (Overflow)**
 Declare um `unsigned char` (que só suporta até 255) chamado `status_poder` e atribua o valor 255. Some 1 a essa variável e imprima o resultado. Entenda na prática o que acontece quando a memória "dá a volta".
-
-[Código do Exercício 2](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-Primitive%20Types/Limit.c)
+    - [Código do Exercício 2](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-Primitive%20Types/Limit.c)
 
 3. **A Armadilha da Divisão**
 Declare dois inteiros, `a = 9` e `b = 2`. Crie duas variáveis `float`: a primeira recebe `a / b` diretamente, e a segunda recebe `(float) a / b`. Imprima ambas e observe a diferença silenciosa.
-
-[Código do Exercício 3](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-Primitive%20Types/TrapDiv.c)
+    - [Código do Exercício 3](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-Primitive%20Types/TrapDiv.c)
 
 4. **A Matemática das Letras (ASCII)**
 Declare um `char letra = 'a'` (minúsculo). Subtraia 32 dessa variável e imprima o novo resultado duas vezes: uma usando o formatador de texto (`%c`) e outra com o formatador de número inteiro (`%d`).
-
-[Código do Exercício 4](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-Primitive%20Types/Lyrics.c)
+    - [Código do Exercício 4](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-Primitive%20Types/Lyrics.c)
 
 5. **Gargalo de Precisão**
 Declare um `float` e um `double`, atribuindo a ambos o valor `3.1415926535`. Imprima os dois na tela forçando a exibição de 10 casas decimais (usando `%.10f` e `%.10lf`). Avalie qual dos dois corrompeu o dado original por falta de espaço em memória.
+    - [Código do Exercício 5](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-Primitive%20Types/Guffaw.c)
 
-[Código do Exercício 5](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-Primitive%20Types/Guffaw.c)
-
+---
 
 ## **Tópico Dois:Operadores Lógicos e Bit a Bit (Biwise)**
 C permite que converse quase diretamente com o processador através dos bits.
@@ -90,29 +86,25 @@ Imagine um `char status = 0;` (em binário: `00000000`).
 
 1. **Par ou Ímpar Ninja**
 Crie um programa que leia um número inteiro e diga se ele é par ou ímpar usando o operador Bitwise AND (`& 1`) em vez do clássico módulo (`% 2`). O último bit de todo número ímpar é sempre 1.
-
-[Código do Exercício 1](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-LogicalOperators/NinjaOddOrEven.c)
+- [Código do Exercício 1](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-LogicalOperators/NinjaOddOrEven.c)
 
 2. **Multiplicação Otimizada**
 Crie uma variável inteira valendo 5. Multiplique-a por 8 usando apenas o operador de deslocamento de bits para a esquerda (`<<`). Imprima o resultado.
-
-[Código do Exercício 2](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-LogicalOperators/OtimizedMultiplication.c)
+    - [Código do Exercício 2](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-LogicalOperators/OtimizedMultiplication.c)
 
 3. **Divisão Rápida**
 Crie uma variável com o valor 100. Divida-a por 4 usando o operador de deslocamento de bits para a direita (`>>`). Imprima o resultado.
-
-[Código do Exercício 3](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-LogicalOperators/QuickDivision.c)
+    - [Código do Exercício 3](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-LogicalOperators/QuickDivision.c)
 
 4. **O Truque do XOR (Swap sem variável temporária)**
 Declare `a = 10` e `b = 20`. Inverta os valores das duas variáveis (fazer `a` valer 20 e `b` valer 10) sem criar uma terceira variável `temp`. Dica: você usará `a = a ^ b;` três vezes seguidas.
-
-[Código do Exercício 4](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-LogicalOperators/XOR.C)
+    - [Código do Exercício 4](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-LogicalOperators/XOR.C)
 
 5. **Comprovando o Curto-Circuito**
 Crie um `if` com duas condições unidas por `&&`. A primeira condição deve ser falsa (ex: `0 == 1`). A segunda condição deve ser uma tentativa de dividir um número por zero (ex: `10 / 0 == 0`). Como a primeira é falsa, o C nunca executará a divisão por zero, evitando que o programa crashe. Imprima uma mensagem provando que o programa sobreviveu.
+    - [Código do Exercício 5](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-LogicalOperators/ShiortCircuit.c)
 
-[Código do Exercício 5](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Topic-LogicalOperators/ShiortCircuit.c)
-
+---
 
 ## **Tópico Três: Controle de Fluxo e Loops**
 A espinha dorsal da execução dos programas.
@@ -153,29 +145,25 @@ A espinha dorsal da execução dos programas.
 
 1. **A Máquina de Estados**
 Crie um `switch` que receba um número de 1 a 4 representando uma ação (Atacar, Defender, Curar, Fugir). Use `break` corretamente e adicione um caso `default` para exibir uma mensagem de erro caso uma opção diferente seja digitada.
-
-[Código do Exercício 1](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Flow-And-Loops/StateMachine.c)
+    - [Código do Exercício 1](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Flow-And-Loops/StateMachine.c)
 
 2. **O Menu Persistente**
 Utilize um `do-while` para solicitar um número de confirmação ao usuário ("Digite 0 para sair do servidor"). O loop só deve encerrar quando o valor digitado for exatamente 0.
-
-[Código do Exercício 2](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Flow-And-Loops/PersistentMenu.c)
+    - [Código do Exercício 2](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Flow-And-Loops/PersistentMenu.c)
 
 3. **Filtro Ágil**
 Faça um loop `for` que conte de 1 a 20. Use uma condicional com o comando `continue` para pular a impressão de todos os números pares. O console deve exibir apenas os ímpares.
-
-[Código do Exercício 3](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Flow-And-Loops/AgileFilter.c)
+    - [Código do Exercício 3](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Flow-And-Loops/AgileFilter.c)
 
 4. **Atribuição Expressa**
 Crie uma variável `escudo_quebrado = 1`. Use o operador ternário para atribuir um valor a uma variável chamada `dano_recebido`. Se o escudo estiver quebrado, o dano será 100. Se não estiver (`0`), o dano será 50.
-
-[Código do Exercício 4](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Flow-And-Loops/ExpressAssignment.c)
+    - [Código do Exercício 4](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Flow-And-Loops/ExpressAssignment.c)
 
 5. **Redenrização por Matriz**
 Construa dois loops `for` aninhados (um `for` dentro do outro) para imprimir um triângulo retângulo feito de asteriscos (`*`). A primeira linha deve ter 1 asterisco, a segunda 2, crescendo até a quinta linha.
+    - [Código do Exercício 5](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Flow-And-Loops/Matriz.c)
 
-[Código do Exercício 5](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Flow-And-Loops/Matriz.c)
-
+---
 
 ## **Tópico Quatro: Funções e Escopo de Variáveis**
 Dividir a lógica em blocos reutilizáveis isola os dados na memória (na área chamada Stack).
@@ -211,7 +199,7 @@ Quando uma função é chamada, o sistema operacional separa um bloco temporári
 
 Isso significa que pode ter dezenas de variáveis chamadas `dano` em funções diferentes, e uma nunca vai interferir na outra.
 
-- Code Exemplo
+- Código Exemplo
     
     ```c
     #include <stdio.h>
@@ -234,7 +222,7 @@ Isso significa que pode ter dezenas de variáveis chamadas `dano` em funções d
 
 Variáveis globais são declaradas no topo do arquivo, fora de qualquer função (incluindo a `main`). Elas residem no segmento de dados do programa e sobrevivem do momento em que o executável abre até ser fechado.
 
-- Code Exemplo    
+- Código Exemplo    
     ```c
     #include <stdio.h>
     
@@ -258,7 +246,7 @@ Variáveis globais são declaradas no topo do arquivo, fora de qualquer função
 
 Para que a função altere o valor real na sua `main`, você precisa pegar o `return` da função e sobrescrever a variável manualmente.
 
-- Code Exemplo
+- Código Exemplo
     ```c
     #include <stdio.h>
     
@@ -291,25 +279,20 @@ Para que a função altere o valor real na sua `main`, você precisa pegar o `re
 1. **A Função Isolada**
 
 Crie uma função chamada `calcularDano` que receba dois inteiros (`ataque` e `defesa`). A função deve retornar o valor do ataque menos a defesa. Se a defesa for maior que o ataque, retorne 0. Imprima o resultado chamando a função direto no `printf` da `main`.
-
-[Código do Exercício 1](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Variable_Function/Isolated_Function.c)
+    -[Código do Exercício 1](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Variable_Function/Isolated_Function.c)
 
 2. **A Ilusão da Cópia**
 Crie uma função `void curarPersonagem(int hp, int cura)`. Dentro dela, some a cura ao HP e imprima o novo valor informando que o personagem foi curado. Na `main`, declare uma variável `hp_atual = 50`, chame a função passando 20 de cura, e logo depois imprima `hp_atual` na `main`. Comprove que o HP original continuou sendo 50.
-
-[Código do Exercício 2](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Variable_Function/Copy_Illusion.c)
+    -[Código do Exercício 2](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Variable_Function/Copy_Illusion.c)
 
 3. **O Relógio Global**
 Declare uma variável global `int turnos_jogados = 1;` fora de qualquer função. Crie uma função `void avancarTurno()` que apenas incrementa essa variável em 1. Chame essa função três vezes na `main` e imprima o valor final.
-
-[Código do Exercício 3](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Variable_Function/Global_Clock.c)
+    -[Código do Exercício 3](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Variable_Function/Global_Clock.c)
 
 4. **Menu Modularizado**
 Refatore o menu que foi construido no tópico anterior. Mova todos os `printf` das opções e o `scanf` para dentro de uma função `int exibirMenu()`. A função deve retornar o número digitado pelo usuário. A sua `main` ficará muito mais enxuta, servindo apenas para rodar o loop e o `switch`.
-
-[Código do Exercício 4](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Variable_Function/Menu.c)
+    -[Código do Exercício 4](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Variable_Function/Menu.c)
 
 5. **Cálculo Encapsulado**
 Crie uma função que receba um número inteiro e calcule o fatorial dele internamente utilizando um loop `for`. Retorne o resultado final e exiba na `main`.
-
-[Código do Exercício 5](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Variable_Function/Encapsulated.c)
+    -[Código do Exercício 5](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Exercicios_Praticos/Variable_Function/Encapsulated.c)

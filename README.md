@@ -57,7 +57,7 @@ Sem *Garbage Collector* e sem abstrações modernas, os códigos desta trilha di
 
 O aprendizado está estruturado em **3 grandes Fases**, totalizando 15 módulos práticos. Abaixo está o resumo de cada ciclo e o link para acessar seus respectivos conteúdos e avaliações.
 
-### [Fase 1: Arquitetura de Memória e Estruturas Fundamentais](./Fase_1-Fundamentos/)
+### [Fase 1: Arquitetura de Memória e Estruturas Fundamentais](/Linguagem_C/Fase_1-Fundamentos/README.md)
 **Status:** `Em Andamento` | **Tamanho:** `5 Módulos`
 
 O ponto de partida lógico. Esta fase opera puramente via terminal (CLI) e foca em construir a fundação de como o C "pensa".
@@ -83,7 +83,7 @@ O avanço para a integração com o Sistema Operacional, quebrando o limite de p
 
 <br>
 
-### 🔴 Fase 3: Motores Gráficos e Integração Externa
+### Fase 3: Motores Gráficos e Integração Externa
 **Status:** `⏸️ Planejado` | **Tamanho:** `5 Módulos`
 
 A ponte entre o código de terminal e o desenvolvimento profissional de jogos e softwares comerciais.
