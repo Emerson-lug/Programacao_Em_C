@@ -39,38 +39,63 @@ Para manter o repositório organizado e com uma curva de aprendizado lógica, os
 
 ---
 
-## 💻 Trilha de Desenvolvimento em C(/Linguagem_C/Fase_1-Fundamentos)
+## 🖥️ Trilha de Especialização: Linguagem C
 
-Abaixo está o log de desenvolvimento da linguagem C. Você pode clicar nos links para ir direto aos códigos e resumos de cada módulo.
+<div align="center">
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
+</div>
 
-### 📚 Fase 1: Fundamentos e Controle de Memória
+<br>
 
-#### [Módulo 1: O Aquecimento (Sintaxe e Lógica)](/Linguagem_C/Fase_1-Fundamentos/Module-Um)
-*Status: Concluído* ✔️
+A linguagem C é a base de toda a arquitetura deste repositório. Aqui, o estudo vai muito além da sintaxe: o objetivo é o controle manual do hardware. 
 
-Este módulo serviu para consolidar a sintaxe base do C, garantindo que o controle de fluxo e as operações primitivas estejam otimizadas antes de avançarmos para o gerenciamento manual de memória.
-
-**O que eu aprendi e apliquei:**
-- Comportamento da memória com *Overflow* em tipos numéricos (`unsigned`).
-- Otimização extrema de processamento utilizando operadores **Bitwise** (`<<`, `>>`, `&`, `^`) em substituição a operadores aritméticos comuns.
-- Controle de fluxo otimizado usando *Jump Tables* (`switch/case`) e curto-circuito em operadores lógicos.
-- Isolamento de escopo na *Stack* através de funções modulares e passagem de parâmetros por valor.
-
-**Provas do Módulo:**
-- [📝 Prova Teórica: Regras do Compilador e Layout de Memória](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Avaliacoes/README.md)
-- [🛠️ Desafio Prático: Calculadora Modular CLI com Otimização de Bits](/Linguagem_C/Fase_1-Fundamentos/Module-Um/Avaliacoes/Calculadora_Modular_CLI.c)
+Sem *Garbage Collector* e sem abstrações modernas, os códigos desta trilha dissecam o comportamento da memória RAM (Stack e Heap), a manipulação em nível de processador (operações bit a bit) e a construção purista de algoritmos críticos.
 
 ---
 
-#### [Módulo 2: O Coração do C (Estruturação)](/Linguagem_C/Fase_1-Fundamentos/Module-Dois)
-*Status: Em Andamento* 🔄
+## 🗺️ Mapa de Fases
 
-**O que estou estudando no momento:**
-- Alocação contígua em Arrays Unidimensionais e Multidimensionais.
-- A armadilha do *Buffer Overflow* silencioso na arquitetura C.
-- Manipulação de Strings puras (`<string.h>`).
-- Agrupamento de tipos de dados heterogêneos utilizando `Structs`.
+O aprendizado está estruturado em **3 grandes Fases**, totalizando 15 módulos práticos. Abaixo está o resumo de cada ciclo e o link para acessar seus respectivos conteúdos e avaliações.
 
+### [Fase 1: Arquitetura de Memória e Estruturas Fundamentais](./Fase_1-Fundamentos/)
+**Status:** `Em Andamento` | **Tamanho:** `5 Módulos`
+
+O ponto de partida lógico. Esta fase opera puramente via terminal (CLI) e foca em construir a fundação de como o C "pensa".
+*   **Conteúdo da Fase:** 
+    *   Sintaxe base, otimização de fluxo e operadores Bitwise.
+    *   Agrupamento de dados na memória (Arrays, Strings puras e Structs).
+    *   A quebra de paradigma: Ponteiros e manipulação direta de endereços de memória.
+    *   Alocação Dinâmica (Heap) e o controle manual do tempo de vida das variáveis.
+    *   Construção do zero de Estruturas de Dados (Listas encadeadas, Pilhas, Filas e Árvores).
+
+<br>
+
+### Fase 2: Sistemas Operacionais e Alta Performance
+**Status:** `⏸️ Planejado` | **Tamanho:** `5 Módulos`
+
+O avanço para a integração com o Sistema Operacional, quebrando o limite de processamento de um único núcleo.
+*   **Conteúdo da Fase:**
+    *   Programação Concorrente com POSIX Threads (Multithreading) e Mutexes para evitar colisão de dados.
+    *   Comunicação Inter-processos (IPC) usando Memória Compartilhada e Sockets (Rede).
+    *   Interação direta com o SO via *System Calls* e manipulação de *File Descriptors*.
+    *   Algoritmos avançados de I.A. (Pathfinding com grafos e busca de rotas).
+    *   *Profiling* e Otimização extrema para varredura de *Memory Leaks* com ferramentas como Valgrind.
+
+<br>
+
+### 🔴 Fase 3: Motores Gráficos e Integração Externa
+**Status:** `⏸️ Planejado` | **Tamanho:** `5 Módulos`
+
+A ponte entre o código de terminal e o desenvolvimento profissional de jogos e softwares comerciais.
+*   **Conteúdo da Fase:**
+    *   Configuração de *Build Systems* (Makefiles e CMake) para projetos grandes.
+    *   Matemática aplicada a motores (Vetores 2D, matrizes de transformação e física de colisão).
+    *   Renderização gráfica 2D em C acoplando bibliotecas de baixo nível (como Raylib ou SDL2).
+    *   Criação de *DLLs* dinâmicas.
+    *   **Interoperabilidade:** Como embutir código C super-rápido dentro de um script C# na Unity.
+
+---
+*Cada Fase exige a conclusão do **Projeto Integrador** para ser dada como finalizada.*
 ---
 
 ## 🚀 Próximos Passos (C# e C++)
